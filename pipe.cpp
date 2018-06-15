@@ -40,7 +40,7 @@ void server(int read_fd, int write_fd)
 
 
 
-        int file_fd = open(path, O_RDONLY, 0777);
+        int file_fd = open(path, O_RDONLY, 0);
 
         if (-1 == file_fd)
         {
